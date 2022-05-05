@@ -7,9 +7,57 @@
 }
 
 body {
-  background-color: #fff;
+  background-color: rgb(253, 154, 154);
   min-height: 100vh;
   display: flex;
   flex-direction: column;
 }
 
+.container {
+  padding: 50px 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: auto auto;
+}
+.loopOne {
+  background-color: #fff;
+  border-radius: 20px;
+  width: 900px;
+  height: 200px;
+  /* display: flex; */
+  align-items: center;
+  padding: 30px 30px;
+}
+.loopOne__count {
+  color: rgb(58, 56, 56);
+  font-size: 25px;
+  margin: 0 10px 0 0;
+}
+.loopOne__box {
+  width: 60px;
+  color: rgb(58, 56, 56);
+  height: 4px;
+  display: block;
+}
+
+.range__input {
+  position: relative;
+}
+.range__input input:nth-child(2) {
+  width: 100%;
+}
+input[type="range"]::-moz-range-thumb {
+  height: 40px;
+  width: 40px;
+  background-color: rgb(51, 137, 250);
+  border-radius: 50%;
+  cursor: pointer;
+  border: 1px solid black;
+}
+.number {
+  font-size: 30px;
+  font-weight: bold;
+  margin-top: 20px;
+  display: block;
+}
